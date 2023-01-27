@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <title>Tugas | Saklar Lampu</title>
+</head>
+
+<body>
+    <h1 class="text-center text-2xl text-slate-50 bg-stone-900">SAKLAR LAMPU</h1>
+
+    <!--  Ruang Keluarga-->
+    <div class="flex justify-center items-center gap-10 mt-12 pr-20 ">
+
+        <div class="flex items-center gap-12">
+            <label class="inline-flex relative items-center cursor-pointer ">
+                <input type="checkbox" value="" class="sr-only peer" id="toogle1" onchange="toogle()">
+                <div
+                    class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+                </div>
+            </label>
+            <!-- Lkel 1 -->
+            <div>
+                <img src="assets/images/off.png" alt="..." id="Lkel1" />
+                <button onclick="saklar('on',1)"> turn on </button>
+                <button onclick="saklar('off',1)"> turn off </button>
+            </div>
+            <!-- Lkel 2 -->
+            <div>
+                <img src="assets/images/off.png" alt="..." id="Lkel2" />
+                <button onclick="saklar('on',2)"> turn on </button>
+                <button onclick="saklar('off',2)"> turn off</button>
+            </div>
+            <!-- Lkel 3 -->
+            <div>
+                <img src="assets/images/off.png" alt="..." id="Lkel3" />
+                <button onclick="saklar('on',3)"> turn on </button>
+                <button onclick="saklar('off',3)"> turn off</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ruang Makan -->
+    <div class="flex items-center justify-center gap-10 mt-12 pr-20">
+        <label class="inline-flex relative items-center cursor-pointer ">
+            <input type="checkbox" value="" class="sr-only peer" id="toogle2" onchange="toogle()">
+            <div
+                class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+            </div>
+        </label>
+        <!-- LMak 1 -->
+        <div>
+            <img src="assets/images/off.png" alt="..." id="Lmak1" />
+            <button onclick="saklar('on',4)"> turn on </button>
+            <button onclick="saklar('off',4)"> turn off</button>
+        </div>
+    </div>
+
+    <!-- Ruang Tidur -->
+    <div class="flex items-center justify-center gap-10 mt-12 pr-20">
+        <label class="inline-flex relative items-center cursor-pointer ">
+            <input type="checkbox" value="" class="sr-only peer" id="toogle3" onchange="toogle()">
+            <div
+                class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+            </div>
+        </label>
+        <!-- LTid 1 -->
+        <div>
+            <img src="assets/images/off.png" alt="..." id="Ltid1" />
+            <button onclick="saklar('on',5)"> turn on </button>
+            <button onclick="saklar('off',5)"> turn off</button>
+        </div>
+        <!-- Ltid 2 -->
+        <div>
+            <img src="assets/images/off.png" alt="..." id="Ltid2" />
+            <button onclick="saklar('on',6)"> turn on </button>
+            <button onclick="saklar('off',6)"> turn off</button>
+        </div>
+    </div>
+
+    <!-- Ruang Tamu -->
+    <div class="flex items-center justify-center gap-10 mt-12 pr-20 mb-20">
+        <label class="inline-flex relative items-center cursor-pointer ">
+            <input type="checkbox" value="" class="sr-only peer" id="toogle4" onchange="toogle()">
+            <div
+                class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
+            </div>
+        </label>
+        <!-- LTam 1 -->
+        <div>
+            <img src="assets/images/off.png" alt="..." id="Ltam1" />
+            <button onclick="saklar('on',7)"> turn on </button>
+            <button onclick="saklar('off',7)"> turn off</button>
+        </div>
+        <!-- LTam 2 -->
+        <div>
+            <img src="assets/images/off.png" alt="..." id="Ltam2" />
+            <button onclick="saklar('on',8)"> turn on </button>
+            <button onclick="saklar('off',8)"> turn off</button>
+        </div>
+        <!-- Ltam 3 -->
+        <div>
+            <img src="assets/images/off.png" alt="..." id="Ltam3" />
+            <button onclick="saklar('on',9)"> turn on </button>
+            <button onclick="saklar('off',9)"> turn off</button>
+        </div>
+        <!-- Ltamp 4 -->
+        <div>
+            <img src="assets/images/off.png" alt="..." id="Ltam4" />
+            <button onclick="saklar('on',10)"> turn on </button>
+            <button onclick="saklar('off',10)"> turn off</button>
+        </div>
+    </div>
+    <script src="data.js"></script>
+</body>
+
+</html>

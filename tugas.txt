@@ -1,0 +1,12 @@
+Tugas Sesi 4 :
+
+1. Buat 10 lampu dengan fungsi sama seperti materi
+2. Buat 4 grup lampu (ruangan) dengan detail sebagai berikut:
+	- Ruang keluarga (3 lampu)
+	- Ruang makan (1 lampu)
+	- Ruang tidur (2 lampu)
+	- Ruang Tamu (4 lampu) 
+
+notes : ada tombol saklar per lampu dan juga sakalr per grup lampu.
+
+3. tampilan buat semenarik mungkin
